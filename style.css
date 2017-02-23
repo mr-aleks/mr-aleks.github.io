@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .center {
     width: 1096px; /* Øèðèíà ýëåìåíòà â ïèêñåëàõ */
     padding: 10px; /* Ïîëÿ âîêðóã òåêñòà */
@@ -12,6 +13,8 @@ h2 {
 	text-align: center;
 }
 
+=======
+>>>>>>> origin/master
 body {
 	margin:0px; padding:0px;
 	background-color:#131211;
@@ -19,4 +22,22 @@ body {
 	color:#7f7d78;
 	font-size:13px;
 	line-height:19px;
+<<<<<<< HEAD
 }
+=======
+}
+h2 {
+	text-align: center;
+}
+img {
+	padding: 10px;
+}
+.center {
+    width: 1096px; /* Ð¨Ð¸Ñ€Ð¸Ð½Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ð² Ð¿Ð¸ÐºÑÐµÐ»Ð°Ñ… */
+    padding: 10px; /* ÐŸÐ¾Ð»Ñ Ð²Ð¾ÐºÑ€ÑƒÐ³ Ñ‚ÐµÐºÑÑ‚Ð° */
+    margin: 0 auto; /* Ð’Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°ÐµÐ¼ Ð¿Ð¾ Ñ†ÐµÐ½Ñ‚Ñ€Ñƒ */
+   // background: #fc0; /* Ð¦Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° */
+   }
+
+
+>>>>>>> origin/master

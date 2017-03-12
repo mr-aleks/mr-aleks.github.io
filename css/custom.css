@@ -138,54 +138,7 @@ figure,
 main {
   display: block;
 }
-/*.big_link {
-	font-family: 'Poppins', sans-serif;
-	font-size: 60px;
-	font-weight: bold;
-	padding: 20px;
-	text-transform: uppercase;
-	text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.77);
-	border: 1px solid rgba(157, 157, 157, 0.64);
-	border-radius: 3px;
-}
-#main_link a {
-	font-family: 'Poppins', sans-serif;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 36px;
-	text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.77);
-	line-height: 1.5;
-	color: #fff;
-}
-#main_link .main_box {
-	border: 5px solid white;
-	margin-bottom: 40px;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.9);
-}
-#main_link a:hover {
-	color: #27A967;
-}
-#main_link .col-md-12 {
-	padding: 20px;
-}
-#main_link .main_box:hover {
-	-webkit-box-shadow: 0px 0px 43px 3px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 43px 3px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 43px 3px rgba(0,0,0,0.75);
-}
-.col1 {
-	background: url(../img/cs_rank.jpg) center / cover no-repeat;
-}
-.col2 {
-	background: url(../img/maps_cover.jpg) top / auto 640px no-repeat;
-}
-.col3 {
-	background: url(../img/cs-go-weapon.jpg) center center / 470px auto no-repeat;
-}
-.col4 {
-	background: url(../img/winter-offensive-collection.jpg) left top/ 110% no-repeat;
-}*/
+
 #main_link .links:hover {
 	color: #27A967;
 	text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.77);
@@ -194,6 +147,7 @@ main {
 	display: flex;
 }
 #main_link .links {
+	color: #f7f7f7;
 	display: flex;
 	align-items: center;
 	justify-content: center;

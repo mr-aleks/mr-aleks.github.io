@@ -31,7 +31,6 @@ p, footer {
 }
 /*============================    ШАПКА    ============================*/
 .navbar {
-	min-width: 442px;
 	margin-bottom: 0;
 }
 .navbar-inverse {
@@ -50,6 +49,9 @@ p, footer {
 	border-radius: 0;
 	border: 0;
 }
+.navbar-toggle {
+	padding: 12px 12px;
+}
 .dropdown-menu li a {
 	padding: 10px;
 }
@@ -67,6 +69,62 @@ body > nav > div > div.navbar-header > a,
 #bs-example-navbar-collapse-1 > ul > li.dropdown.open > ul > li a {
 	text-transform: capitalize;
 }
+.navbar-brand {
+	word-wrap: break-word;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background: #27A967;
+}
+@media (max-width: 767px) { ... }
+@media (max-width: 480px) {
+	.navbar-brand {
+		padding: 10px 15px;
+		text-align: center;
+		margin: -55px 80px 0px 5px;
+		height: 60px;
+	}
+	.navbar-nav .dropdown-menu {
+		position: static;
+		float: none;
+		width: auto;
+		margin-top: 0;
+		background-color: transparent;
+		border: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	.navbar-nav .dropdown-menu > li > a {
+		padding: 5px 15px 5px 25px;
+	}
+	.dropdown-menu {
+		padding: 0;
+	}
+}
+.dropdown .dropdown-menu {
+  -webkit-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  -moz-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  -o-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown.open .dropdown-menu {
+  -webkit-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  -moz-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  -ms-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  -o-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  max-height: 178px;
+  opacity: 1;
+  visibility: visible;
+}
 /*============================    ГЛАВНЫЙ ЭКРАН    ============================*/
 .jumbotron {
 	background: #27A967;
@@ -79,16 +137,6 @@ body > nav > div > div.navbar-header > a,
 }
 .jumbotron h1 {
 	text-transform: uppercase;
-}
-.call-to-action {
-	text-align: center;
-}
-.call-to-action p {
-	margin-bottom: 30px;
-	font-family: sans-serif;
-}
-.glyphicon-large {
-	font-size: 100px;
 }
 .thumbnail {
 	background: #3E4649;
@@ -147,7 +195,6 @@ main {
 	display: flex;
 }
 #main_link .links {
-	color: #f7f7f7;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -204,12 +251,6 @@ main {
 /* Landscape phones and down */
 @media (max-width: 480px) { ... }
 /*============================    ФУТЕР (ПОДВАЛ)    ============================*/
-
-/*.call-to-action {
-	min-height: calc(100vh - 64.5vh)
-}*/
-
-
 footer {
 	margin-top: 50px;
 	padding: 20px 0 5px;
@@ -228,26 +269,53 @@ footer p {
 }
 footer a {
 	color: #cdcdcd;
+	text-transform: capitalize;
 }
 footer a:hover {
-	color: #f7f7f7;
+	color: #9d9d9d;
 }
 .footer_title {
 	padding-left: 0;
 }
-
 .footer_navbar {
 	padding-left: 0;
 	margin-bottom: 20px;
 }
 .footer_navbar div.col-md-6, .footer_navbar div.col-md-2 {
-	padding: 0;
+	padding: 0 0 5px;
 }
-.footer_navbar a {
-	text-transform: capitalize;
+.footer_navbar li {
+	padding: 3px 0;
 }
 /*============================    MAPS    ============================*/
-
+#de_dust2,
+#de_mirage,
+#de_inferno,
+#de_nuke,
+#de_cbble,
+#de_cache,
+#de_overpass,
+#de_train,
+#de_dust,
+#cs_office,
+#de_aztec,
+#cs_assault,
+#cs_italy,
+#cs_militia {
+	display: inline-block;
+}
+.panel-body a.btn.btn-default {
+	float: right;
+	text-transform: capitalize;
+	color: #333;
+}
+#links_xs a{
+	color: #333;
+	text-transform: capitalize;
+}
+.modal-dialog {
+	color: #333;
+}
 /*============================    WEAPON    ============================*/
 .panel-default > .panel-heading {
 	text-transform: uppercase;
@@ -293,6 +361,15 @@ section#main_weapon h3 {
 #myScrollspy > div.panel-body > ul > ul {
 	padding-left: 20px;
 }
+#Pistols,
+#Heavy,
+#SMGs,
+#Rifles,
+#Gear,
+#weapon_primary,
+#weapon_secondary {
+	display: inline-block;
+}
 /*============================    SPRAY    ============================*/
 #miniweapon img {
 	min-width: 65px;
@@ -322,4 +399,19 @@ section#main_weapon h3 {
 #body_spray > div.container > div > div.col-md-10 a {
 	text-decoration: none;
 	color: #f7f7f7;
+}
+#miniweapon,
+#main_spray,
+#Rifles {
+	display: inline-block;
+}
+#body_spray a.btn.btn-default {
+	float: right;
+	text-transform: capitalize;
+	background: #3E4649;
+	color: #f7f7f7;
+}
+#miniweapon #links_xs .nav>li>a:focus,
+#miniweapon #links_xs .nav>li>a:hover {
+	background: #485154;
 }

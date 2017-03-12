@@ -78,7 +78,22 @@
 
                 <section id="Pistols">
                   <span></span>
-                  <h3>1. pistols</h3>
+
+                  <section id="links_xs" class="hidden-lg hidden-md">
+                    <ul class="nav nav-pills">
+                      <li><a href="#Pistols_h3">1. pistols</a></li>
+                      <li><a href="#Heavy">2. heavy</a></li>
+                      <li><a href="#SMGs">3. smg</a></li>
+                      <li><a href="#Rifles">4. rifles</a></li>
+                      <li><a href="#Gear">5. gear</a></li>
+                      <li><a href="#Grenade">6. grenade</a></li>
+                      <li><a href="#weapon_tables">weapon rankings</a></li>
+                      <li><a href="#weapon_primary">primary rank</a></li>
+                      <li><a href="#weapon_secondary">secondary rank</a></li>
+                    </ul>
+                  </section>
+
+                  <h3 id="Pistols_h3">1. pistols</h3>
                   <!-- Nav tabs -->
                   <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#counter-terrorists_pistols" aria-controls="counter-terrorists_pistols" role="tab" data-toggle="tab">counter-terrorists</a></li>
@@ -118,6 +133,7 @@
                         <figcaption class="figure-caption text-center">terrorists tec-9</figcaption>
                       </figure>                      
                     </div>
+                    <a class="btn btn-default hidden-lg hidden-md" href="#toTop" role="button">back to top</a>
                   </div>
                 </section>
 
@@ -159,6 +175,7 @@
                         <figcaption class="figure-caption text-center">terrorists sawed-off</figcaption>
                       </figure>                     
                     </div>
+                    <a class="btn btn-default hidden-lg hidden-md" href="#toTop" role="button">back to top</a>
                   </div>
                 </section>
 
@@ -200,6 +217,7 @@
                         <figcaption class="figure-caption text-center">terrorists mac-10</figcaption>
                       </figure>                    
                     </div>
+                    <a class="btn btn-default hidden-lg hidden-md" href="#toTop" role="button">back to top</a>
                   </div>
                 </section>
 
@@ -257,6 +275,7 @@
                         <figcaption class="figure-caption text-center">counter-terrorists g3sg1</figcaption>
                       </figure>
                     </div>
+                    <a class="btn btn-default hidden-lg hidden-md" href="#toTop" role="button">back to top</a>
                   </div>
                 </section>
 
@@ -280,6 +299,7 @@
                     <img src="img/weapons/COUNTER-TERRORISTS/5.Gear/JPEG/4.defuse_kit.jpg" alt="Defuse Kit" class="figure-img img-fluid rounded img-thumbnail img-responsive">
                     <figcaption class="figure-caption text-center">counter-terrorists defuse kit</figcaption>
                   </figure>
+                  <a class="btn btn-default hidden-lg hidden-md" href="#toTop" role="button">back to top</a>
                 </section>
 
                 <section id="Grenade">
@@ -320,6 +340,7 @@
                         <figcaption class="figure-caption text-center">counter-terrorists Molotov</figcaption>
                       </figure>                    
                     </div>
+                    <a class="btn btn-default hidden-lg hidden-md" href="#toTop" role="button">back to top</a>
                   </div>
                 </section>
                 
@@ -647,6 +668,7 @@
                   </table>
                   <p>&#042;Weapons rarely seen in competitive play at higher ranks.</p>
                   <p><sup>&#094;</sup>The P90 has the potential to surpass the Famas and Galil in lower ranked play due to the fact that players at these ranks are not able to handle being overwhelmed by the devastating fire rate and magazine clip size of the P90. This is why the P90 is infamously known as the Pro90.</p>
+                  <a class="btn btn-default hidden-lg hidden-md" href="#toTop" role="button">back to top</a>
                 </section>
                 <section id="weapon_secondary">
                   <h4>competitive secondary weapon rankings</h4>
@@ -781,6 +803,7 @@
                 <p>&#042;Weapons rarely seen in competitive play at higher ranks.</p>
                 <p>&#042;&#042;I would consider the USP-S better for holding sites and the Glock better for taking sites and therefore dropping one for another does not happen often.</p>
                 <p>Note: I consider the USP-S to be a better starting pistol than the P2000 because the USP-S has less recoil than the P2000 and the USP-S is silenced. The extra bullets the P2000 provides is not worth the trade-off in my opinion</p>
+                <a class="btn btn-default hidden-lg hidden-md" href="#toTop" role="button">back to top</a>
               </div>
             </div>
           </div>
@@ -824,6 +847,26 @@
   <script>
     jQuery(function($){
       $('.table').footable();
+    });
+  </script>
+  <script>
+    $('.nav-pills a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 800);
+      }
+    });
+    $('.btn-default[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 800);
+      }
     });
   </script>
 </body>
